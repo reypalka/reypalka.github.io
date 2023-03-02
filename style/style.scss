@@ -1,0 +1,484 @@
+*{
+    box-sizing: border-box;
+}
+
+$text-color-grigio-scuro:#3D3D3C;
+$background-color-fondini:#F4ECE8;
+$arancio: #F39200;
+$grigio-chiaro: #F2F2F2;
+$bianco: #ffff;
+$hover-color: #E88C01;
+$grigio-bottoni:#646464;
+$grigio-medio:#757885;
+$grigio-chiaro-gr:#B5B7C4;
+$arancio-chiaro:#FFCDB8;
+
+.grigio-chiaro-gr{
+    color:$grigio-chiaro-gr;
+}
+.grigio{
+    background-color: $grigio-chiaro;
+}
+.blue{
+    background-color: #059EB2;
+}
+.fondini{
+    background-color: $background-color-fondini;
+}
+.arancio{
+    color:$arancio;
+}
+.arancio-bg{
+    background-color: $arancio;
+}
+.white{
+    color: $bianco !important;;
+}
+.link-dark {
+    color:$text-color-grigio-scuro!important;
+}
+
+.hover-line::before {
+    content: '';
+    position: relative;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: $text-color-grigio-scuro;
+    display: block;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: transform 0.4s cubic-bezier(1, 0, 0, 1)
+  }
+  .hover-line:hover::before {
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1)
+  }
+
+h1{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 103.5%;
+}
+h2{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 114.3%;
+}
+h3{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 136%;
+}
+.h3-serif{
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120.5%;
+}
+p{
+    //styleName: Body Copy;
+    font-family: 'Noto Serif';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+.small{
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 160%;
+}
+.body-sans{
+    /* Body copy Sans */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 140%;
+}
+.copy-caps{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130.4%;
+    text-transform: uppercase;
+}
+.dida{
+    font-family: 'Noto Serif';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+}
+.bottoni-small{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+}
+.link-bold{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 140%;
+}
+.btn-primary{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1.5px solid $text-color-grigio-scuro;
+    color: $text-color-grigio-scuro;
+    width: 100%;
+    --bs-btn-hover-bg: #F39200;
+    --bs-btn-hover-border-color:  #F39200;
+    --bs-btn-active-bg: #E88C01;
+    --bs-btn-active-border-color: #E88C01;
+}
+
+.form-control{
+    width: 90%;
+    border: 1px solid $text-color-grigio-scuro;
+    background-color: rgba(0, 0, 0, 0);
+}
+.form-check-label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 160%;
+}
+.form-check-input{
+    width: 1.3em;
+    height: 1.3em;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid $text-color-grigio-scuro;
+    background-size:cover;
+}
+.form-check-input:checked {
+    background-color: $text-color-grigio-scuro;
+    border-color: $text-color-grigio-scuro;
+}
+form{
+    button{
+        width: 190px!important;
+    }
+}
+.border-bottom{
+    border-bottom:1px solid $text-color-grigio-scuro!important;
+}
+
+
+header{
+    background-color: $bianco ;
+    box-shadow: 6px 7px 9px rgba(0, 0, 0, 0.03);
+    width: 100%;
+    .border-color{
+        border-color:#FFF9F6!important;
+    }
+    .vr{
+        background-color: $grigio-chiaro-gr;
+        width: 1px;
+    }
+}
+.arrow-down::after{
+    background-image: url(../img/toggle.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0.3em;
+    margin-bottom: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    display: inline-flex;
+    align-items: center;
+    width: 10px;
+    height: 6px;
+    border: none;
+    color: var($text-color-grigio-scuro)
+}
+
+.background{
+    width: 100%;
+    background: linear-gradient(270deg, #3D3D3C 0%, rgba(61, 61, 60, 0.2) 100%), url(../img/background.png);
+    height: 584px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: $bianco;
+    .card-text{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 160%;
+        letter-spacing: 0.01em;
+        color: $arancio;     
+    }
+    .card-body{
+        height: 100%;
+    }
+}
+.no-fade{
+    background: url(../img/background02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 416px;
+    width: auto;
+    @media (320px<= width <=800px){
+        height: 200px;
+    }
+}
+.card-title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 140%;
+}
+.fondini{
+    .w-75{
+        width: 90%!important;
+    }
+    .square{
+        width: 124px;
+        height: 132px;
+    }
+    .blue .btn{
+        width: 127px;
+    }
+    .arancio-bg .btn{
+        width: 127px;
+    }
+}
+
+.mondi{
+    .container{
+        background-color: $background-color-fondini;
+        .arrow::before{
+            background-image: url(../img/arrow.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            width:9.5px;
+            height: 19px;
+            content: "";
+            display: flex;
+            margin-top: 40px;
+            @media (320px<= width <=800px){
+                display: none;
+            }
+        }
+            .arrow::after{
+            background-image: url(../img/arrow.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            transform: rotate(180deg);
+            width:9.5px;
+            height: 19px;
+            content: "";
+            display: flex;
+            margin-bottom: -40px;
+            @media (320px<= width <=800px){
+                display: none;
+            }
+        }
+    }
+    .rounded-circle{
+        background-color: $text-color-grigio-scuro;
+        width: 122px;
+        height: 122px;
+    }
+}
+.custom-card{
+    background-color: $bianco;
+    height: 136px;
+    width: 193px;
+    top:-60px;
+}
+.sponsor-card{
+    background-color: $bianco;
+    height: 192px;
+    width: 180px;
+    box-shadow: 6px 7px 9px rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+    p{    
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 195%;
+        text-align: center;
+    }
+}
+.grigio p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 140%;
+}
+.hover-link:hover{
+    text-decoration: underline ;
+}
+.breadcrumb{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 140%;
+    --bs-breadcrumb-divider-color: $text-color-grigio-scuro;
+    --bs-breadcrumb-item-active-color: $text-color-grigio-scuro;
+    a{
+        text-decoration: none;
+        color:$text-color-grigio-scuro;
+    } 
+    &-item::before {
+        padding-right: 1rem!important;
+    }
+}
+.avatar{
+    width: 56px;
+    height: 56px;
+}
+
+@media (320px<= width <=800px){
+    .to-row{
+        flex-direction: row!important;
+        justify-content: space-between;
+        width: 100%;
+        margin-right: 0px!important;
+        padding-top: 0.5rem!important;
+    }
+    .small-img{
+        width: 100%;
+        height:auto;
+    }
+    .socials{
+        justify-content: center!important;
+    }
+    .form-control {
+        width: 100%;
+    }
+    form{
+       .w-50{
+        width: 100%!important;
+       }
+       button {
+        width: 100%!important;}
+    }
+    .my-5{
+        margin-top: 1.5rem!important;
+        margin-bottom:1.5rem!important;
+    }
+    .p-5{
+        padding: 1.5rem!important;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 90.5%;
+        margin-bottom: 0.5rem!important;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 36px;
+        line-height: 90.5%;
+    }
+    .background .py-5{
+        padding-top: 1.5em!important;
+        padding-bottom: 1.5em!important;;
+    }
+    .background .card-body{
+        padding: 8px;
+    }
+    .background .card-title{
+        font-size: 16px;
+        line-height: 120%;
+    }
+    .background .d-flex{
+        display: block!important;
+    }
+
+    .background .card{
+        width: 100%;
+        img{
+            display: none;
+            width: 50px;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+    .fondini{
+        h1{
+            margin-bottom: 0.5rem!important;
+        }
+        .card .mb-5{
+            margin-bottom: 2rem!important;
+        }
+        .card-img {
+            max-width: 100%;
+            height: 100px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .col-md-4{
+            padding-left: 1rem!important;
+            padding-right: 1rem!important;
+        }
+        .py-5{
+            padding-top: 1.5rem!important;
+            padding-bottom: 1.5rem!important;
+        }
+        .blue .btn {
+            width: 100%;
+        }
+        .arancio-bg .btn {
+            width: 100%;
+        }
+    }
+    .mondi{
+        .py-5{
+            padding-top: 1.5rem!important;
+            padding-bottom: 1.5rem!important;
+        }
+    }
+    footer .container{
+        .my-5{
+            margin-top: 0.5rem!important;
+            margin-bottom: 0.5rem!important;
+        }
+        .py-5{
+            padding-top: 0.5rem!important;
+            padding-bottom: 0.5rem!important;
+        }
+    }
+}
+
+
+
